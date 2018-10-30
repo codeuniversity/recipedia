@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,400i,700');
+
+
+html {
+  margin: 0;
+  padding: 0;
+  /*font-family: "Space Mono", monospace;*/
+  font-family: "Merriweather", sans-serif;
+  color: #333;
+  background: rgba(202, 226, 216, 0.71);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+main {
+  padding: 1em;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 3.4em;
+  text-align: center;
+}
+
+.header-subtitle {
+  margin: 0;
+  font-size: 2.1em;
+  font-style: italic;
+  text-align: center;
+  color: rgb(156, 180, 170);
+}
+
+
+.recipe-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.recipe-list-item {
+  margin: 0 0 2em 0;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.recipe-list-item--link {
+  display: block;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.recipe-list-item--link:hover .recipe-list-item--title {
+  color: seagreen;
+}
+
+.recipe-list-item--link:hover .recipe-list-item--image {
+  transform: scale(1.3,1.3);
+}
+
+.recipe-list-item--figure {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  min-height: 100px;
+  background-color: rgb(196, 220, 210);
+}
+
+.recipe-list-item--image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.2s cubic-bezier(1,0,0,1);
+}
+
+.recipe-list-item--title {
+  color: #333;
+  border: none;
+  transition: all 0.3s ease-out;
+}
+
+
+@media (min-width: 40em) {
+
+  header,
+  main {
+    padding: 2em;
+  }
+
+  .recipe-list {
+    column-count: 2;
+  }
+
+  .recipe-list-item--link {
+  }
+}
+
+@media (min-width: 64em) {
+
+  .recipe-list {
+    column-count: 3;
+  }
+
+}
+
+@media (min-width: 80em) {
+
+  .recipe-list {
+    column-count: 5;
+  }
+
+}
