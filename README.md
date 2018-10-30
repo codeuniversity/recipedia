@@ -1,2 +1,2 @@
 # recipedia
-Collection of recipes from SE_19 workshop
+Collection of recipes from SE_19 workshop.
