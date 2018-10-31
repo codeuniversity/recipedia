@@ -1,0 +1,32 @@
+body.main{
+  margin: 0;
+  background: url(pic/coq1.jpg) fixed;
+  background-size: cover!important;
+  text-align: center;
+  background-position: center!important;
+  color: white;
+}
+.header {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+.h{
+  font-size: 60px;
+}
+.p {
+  font-size: 20px;
+}
+.header1 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  transform: translateX(-40%, -20%);
+
+}
+.header2 {
+  width: 550px;
+  height: 500px;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
