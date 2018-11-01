@@ -16,6 +16,6 @@ let listItems = document.getElementsByClassName("steps");
 for(let i = 0; i < listItems.length; i++){
     item = listItems[i];
     item.addEventListener("click", function() {
-        item.style.textDecoration = "line-through";
+        this.style.textDecoration = "line-through";
     });
 };
